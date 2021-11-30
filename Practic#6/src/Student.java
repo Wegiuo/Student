@@ -55,14 +55,4 @@ public class Student {
     public void SetScore(double score){
         this.score = score;
     }
-
-    public int compareTo(Student that) {
-        if (that == null)
-            throw new NullPointerException();
-        if (this.score == that.score)
-            return 0;
-        if (this.score < that.score)
-            return -1;
-        return 1;
-    }
 }
